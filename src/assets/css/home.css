@@ -24,11 +24,11 @@ a:hover { text-decoration : none; color: #000000; }
 
 /****************************************************************************/
 
+/* wrap */
 #wrap { margin : 0px auto; width : 100%; background-color : #FFFFFF; }
+/****************************************************************************/
 
-/****************************************************************************/
-/**************************** header ****************************************/
-/****************************************************************************/
+/* header */
 /* header 전체 */
 header { border-bottom: 1px solid #000; }
 
@@ -77,10 +77,8 @@ header .header3 ul>li:last-child a { border: none; }
 /****************************************************************************/
 
 
-/****************************************************************************/
-/******************************* nav **************************************/
-/****************************************************************************/
 
+/* nav */
 /* nav 전체 - 줄 그으려고 필요함 */
 nav { height: 50px; border-bottom : 1px solid #000; position: absolute; width: 100%; margin: 0 auto; }
 
@@ -183,43 +181,27 @@ nav .nav1 .nav1-main>li { display: block; float: left; box-sizing: border-box; }
     overflow: hidden;
     color: #000;
 }
+/****************************************************************************/
 
 /* content */
 /* content 전체 */
-.content {
-    width: 1300px;
-    margin : 60px auto 0 auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
+.content { width : 1300px; margin : 60px auto; }
 
-
+/****************************************************************************/
 
 /* footer */
-footer {
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-}
+/* footer 전체*/
+footer { width : 100%; font-size : 15px; text-align : center; }
 
-footer .footer {
-    width: 1300px;
-    height: 50px;
-    background-color: #d6d6d6;
-    margin : 0px auto;
-}
+/* footer 안에서 보여질 부분*/
+footer .footer { width : 1300px; height : 50px; background-color : #d6d6d6; margin : 0px auto; }
 
-footer .footer ul {
-    width: 1300px;
-    line-height: 50px;
-    margin-left : 350px;
-}
+/* footer 리스트 */
+footer .footer ul { width : 1300px; line-height : 50px; margin-left : 350px; }
 
-footer .footer ul>li {
-    margin-right: 50px;
-    float: left;
-}
-
+/* 리스트별 간격*/
+footer .footer ul>li { margin-right : 50px; float : left; }
+/****************************************************************************/
 
 
 

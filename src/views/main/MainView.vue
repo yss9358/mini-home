@@ -40,7 +40,7 @@
                 </ul> -->
                 <!-- 관리자가 로그인했을때 -->
                 <!-- <ul>   
-                    <li><a>ㅁㅁㅁ님</a></li>
+                    <li><a>관리자</a></li>
                     <li><a>로그아웃</a></li>
                     <li><a>관리페이지</a></li>
                 </ul> -->
@@ -128,14 +128,13 @@
     </nav>
     <!-- //nav 부분 -->
 
-    <div class="content clearfix">
-        <div class="content-slide">
-            
+    <div class="content-slide clearfix">
+        <div class="slide">
+            <!-- https://jjineei.tistory.com/10 -->
         </div>
-
-
+        <!-- slide -->
     </div>
-    <!-- //content 부분 -->
+    <!-- //content-slide 부분 -->
 
     <footer>
         <div class="footer">
@@ -164,7 +163,7 @@ export default{
     },
     data(){
         return{
-            show : false, //
+            show : false, // 서브메뉴용 체크
             hitList : [
                 '쇼파' ,
                 '침대',

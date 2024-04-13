@@ -1,4 +1,13 @@
-.content .content-slide {
+/* content-slide */
+.content-slide {
+    width: 100%;
+    height: 600px;
+    margin : 60px auto;
+    /* border: 1px solid #000; */
+}
+/* slide 나올 부분*/
+.content-slide .slide {
     width: 1300px;
-    
+    margin : 0 auto;
+    border: 1px solid #000;
 }
