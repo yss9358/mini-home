@@ -1,0 +1,237 @@
+/****************************************************************/
+/* 초기화 관련 ***************************************************/
+/****************************************************************/
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr,
+textarea, button, form { margin : 0; padding : 0; }
+
+body { font-size : 12px; font-family : "맑은 고딕", 돋움, 굴림; text-align : center; color : #333; background-color : #fff; }
+
+ul, ol { list-style-type : none; }
+
+a:link { text-decoration : none; color: #000000; }
+a:visited { text-decoration : none; color: #000000; }
+a:active { text-decoration : none; color: #000000; }
+a:hover { text-decoration : none; color: #000000; }
+
+
+/* clearfix */
+.clearfix { *zoom : 1; }
+.clearfix:before, .clearfix:after { display : block; content : ""; line-height : 0; }
+.clearfix:after { clear: both; }
+
+/****************************************************************************/
+
+#wrap { margin : 0px auto; width : 100%; background-color : #FFFFFF; }
+
+/****************************************************************************/
+/**************************** header ****************************************/
+/****************************************************************************/
+/* header 전체 */
+header { border-bottom: 1px solid #000; }
+
+/* header0 */
+header .header0 { width : 1300px;height : 50px; margin : 5px auto; padding : 10px 0px 15px 0px ; }
+
+/* header1 */
+/* 로고 이미지 쪽 */
+header .header1 { width : 350px; float : left; margin : 0px 0px 0px 10px; }
+
+/* 로고 이미지 */
+header .header1 img { width : 50px; float : left; margin-right: 10px; cursor: pointer; }
+
+/* 로고 옆 글자*/
+header .header1 span a { text-align : left; line-height : 50px; float: left; font-size : 30px; cursor: pointer; }
+
+/* header2 */
+/* 검색 쪽 */
+header .header2 { width : 500px; float : left; border : 1px solid #000; border-color : #2c95eb; margin-right: 70px; }
+
+/* 검색 돋보기 이미지 */
+header .header2 img { width : 48px; float : left; position : relative; background-color : #fff; }
+
+/* 검색창 */
+header .header2 input { width : 350px; height : 48px; text-align : left; font-size : 20px; outline : none; border-width : 0; }
+
+/* header3 */
+/* 카트, 로그인 쪽 */
+header .header3 { width : 350px; height : 50px; float : left; }
+
+/* 장바구니 이미지 */
+header .header3 img { width : 40px; height : 40px; margin-right : 20px; padding : 5px 0px; float : left; cursor: pointer; }
+
+/* 로그인쪽 a태그  */
+header .header3 ul { height: 30px; line-height: 30px; font-size: 15px; margin : 10px 0px; float : left; }
+
+/* 리스트 float */
+header .header3 ul>li { float : left; }
+
+/* a태그 옆에 라인 */
+header .header3 ul>li>a { border-right : 1px solid #000; padding : 0px 15px 0px 15px; text-align: center; cursor: pointer; }
+
+/* 마지막 라인 x */
+header .header3 ul>li:last-child a { border: none; }
+
+/****************************************************************************/
+
+
+/****************************************************************************/
+/******************************* nav **************************************/
+/****************************************************************************/
+
+/* nav 전체 - 줄 그으려고 필요함 */
+nav { height: 50px; border-bottom : 1px solid #000; position: absolute; width: 100%; margin: 0 auto; }
+
+/* nav0 */
+/* nav 담길부분 - 영역지정만 */
+nav .nav0 { display: block; width : 1300px; margin : 0px auto; background-color: none; }
+
+/* nav1 */
+/* nav1 메뉴 공간 */
+.nav1 { display: block; width: 800px; }
+
+/* 메뉴 커서 */
+.nav1 a { cursor: pointer; }
+
+/* nav1 메뉴 한칸씩 */
+nav .nav1 .nav1-main>li { display: block; float: left; box-sizing: border-box; }
+
+/* nav1 카테고리 */
+.nav1 .nav1-main>li>a{
+    width: 120px;
+    height : 30px;
+    display: block;
+    font-size: 30px;
+    padding: 3px 0px 15px 0px;
+    position: relative;
+    margin: 0px 15px;
+    background-color: #d6d6d6;
+}
+
+/* 눌렀을 때 나올 서브메뉴 */
+.nav1-sub {
+    display: block;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    z-index: 9999;
+    box-sizing: border-box;
+    background-color: #eeeaea;
+}
+/* 서브메뉴 간격 */
+.nav1-sub li {
+    margin-bottom: 10px;
+}
+
+/* nav2 */
+/* 인기검색어 나오는 구간*/
+/* 롤링 배너 */
+.rollingbanner{
+    position: relative;
+    width: 250px;
+    height: 32px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-left: 900px;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+}
+
+/* 타이틀 */
+.rollingbanner > .title{
+    font-weight: bold;
+    float: left;
+    padding-right: 10px;
+}
+
+/* 롤링 배너 */
+.rollingbanner > .nav2-hit{
+    position: relative;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}  
+
+.rollingbanner li{
+    position: absolute;
+    top: -36px;
+    left: 0;
+}
+
+.rollingbanner li.prev{
+    top: 36px;
+    transition: top 0.5s ease;
+}
+.rollingbanner li.current{
+    top: 0;
+    transition: top 0.5s ease;
+}
+.rollingbanner li.next{
+    top: -36px;
+}
+.rollingbanner a{
+    display: block;
+    display: -webkit-box;
+    text-decoration: none;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    color: #000;
+}
+
+/* content */
+/* content 전체 */
+.content {
+    width: 1300px;
+    margin : 60px auto 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer .footer {
+    width: 1300px;
+    height: 50px;
+    background-color: #d6d6d6;
+    margin : 0px auto;
+}
+
+footer .footer ul {
+    width: 1300px;
+    line-height: 50px;
+    margin-left : 350px;
+}
+
+footer .footer ul>li {
+    margin-right: 50px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
